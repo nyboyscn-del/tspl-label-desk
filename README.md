@@ -18,6 +18,8 @@ The default backend saves TSPL files under `.runtime-data/outbox` and never cont
 
 The included generic profile is **UNVERIFIED**. Sanitized 203 DPI output is compared with legacy software fixtures; 300 DPI is software-tested. No printer/firmware combination is claimed compatible without documented physical output and measurement. Software tests do not replace a hardware test.
 
+One synthetic 203 DPI card was printed on a TTP-244 Pro using approximately 60 × 40 mm measured stock. Chinese text, Code128, and QR were visible after correcting native QR syntax. The firmware version, precise printed geometry, and scan decoding were not recorded, so the generic profile remains **UNVERIFIED**.
+
 ## Quick labels and configuration
 
 The bundled product and warehouse examples are generic. Edit `profiles/quick-label-templates.json` to define one to three preset dimensions per template. Maintain selectable products in Model Management. User settings are stored locally under `.runtime-data` and are not part of the source package. Profile calibration is authoritative; `paper.json` is maintained as a compatibility mirror.

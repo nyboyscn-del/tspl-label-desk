@@ -12,6 +12,8 @@ The app's 1-bit glyph masks use set pixels as foreground. It packs bits MSB-firs
 
 Native `QRCODE` uses unquoted ECC and mode parameters (for example, `H,5,A,0,"content"`) per the TSC TSPL programming manual. The sanitized legacy QR fixture retains its older quoted parameters for comparison; the current output intentionally differs because that form left the QR area blank in the 2026-10-29 TTP-244 Pro physical test. This command correction does not change bitmap golden bytes.
 
+The corrected synthetic 203-DPI test card subsequently printed Chinese text, Code128, and a visible QR on the same TTP-244 Pro. The operator reported media measured at approximately 60 × 40 mm. Firmware version, exact printed-ruler dimensions, symbol scan decoding, and the fine single-dot pattern remain unverified; this observation does not promote the generic profile to hardware-verified compatibility.
+
 New profiles use `config_version: 2` and default to `bitmap_invert: true`. An existing profile is migrated only when its entire contents exactly match the known prior generated default; the original JSON is copied to a content-hash-named `.bak` before the polarity and version fields are updated. Other existing profiles keep their selected polarity and settings; no saved printer configuration is replaced by the default.
 
 Calibration values under `profile.json` are the single authoritative source. `paper.json` is retained as a compatibility mirror for the existing UI/API. If an older installation has different values in the two files, startup saves the old `paper.json` to a content-hash-named backup before synchronizing the mirror from Profile. Calibration updates write both files; profile updates preserve the existing authoritative calibration values.
