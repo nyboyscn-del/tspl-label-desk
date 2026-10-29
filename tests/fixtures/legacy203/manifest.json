@@ -1,0 +1,29 @@
+{
+  "fixture_source": "read-only source TSPL core and matching legacy layout formulas; local source path omitted",
+  "synthetic_content_only": true,
+  "dpi": 203,
+  "label_mm": [
+    60,
+    40
+  ],
+  "python": "3.14.4",
+  "pillow": "12.2.0",
+  "files": {
+    "chinese_multiline.tspl": {
+      "bytes": 10935,
+      "sha256": "2407fa4d586d3e9a1f40e996084cc79d69bdabb568ba9ca04d3c95b79b914bde"
+    },
+    "custom_multiline.tspl": {
+      "bytes": 7415,
+      "sha256": "baf04477b1f97cae1a13f3b727fb318ecc81c95cf1bbb94223493ed6faa4e524"
+    },
+    "barcode_qr.tspl": {
+      "bytes": 4151,
+      "sha256": "06cdbd4bee0a362f71e5f4aab037c6b60edf1fe30ae6e9544c6e309d2b387dc6"
+    },
+    "calibration_card.tspl": {
+      "bytes": 2371,
+      "sha256": "72014becabf0e40479af7c0a044a510594b4a2b09fd05a88e9a8e9f4d2e71f44"
+    }
+  }
+}

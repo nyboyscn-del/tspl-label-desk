@@ -1,0 +1,15 @@
+name: Printer compatibility report
+description: Report physical verification details for a printer/profile
+body:
+  - type: input
+    id: printer
+    attributes: { label: Printer model and firmware }
+    validations: { required: true }
+  - type: input
+    id: dpi
+    attributes: { label: DPI and media size }
+    validations: { required: true }
+  - type: textarea
+    id: evidence
+    attributes: { label: Command path, measurement, and photos (remove private details) }
+    validations: { required: true }

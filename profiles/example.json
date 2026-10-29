@@ -1,0 +1,11 @@
+{
+  "printer_model": "Example TSPL printer (unverified)",
+  "dpi": 203,
+  "dots_per_mm": 8.0,
+  "supported_commands": ["BITMAP", "BAR", "BARCODE 128"],
+  "printer_queue": null,
+  "calibration": {"width_mm": 60, "height_mm": 40, "source": "assumed"},
+  "verification_status": "UNVERIFIED",
+  "bitmap_invert": true,
+  "config_version": 2
+}

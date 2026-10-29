@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "templates": [
+    {
+      "id": "general-product",
+      "name": "General product label",
+      "dimensions": [
+        {"key": "size", "label": "Size", "options": [{"value": "s", "label": "Small"}, {"value": "m", "label": "Medium"}, {"value": "l", "label": "Large"}]},
+        {"key": "color", "label": "Color", "options": [{"value": "black", "label": "Black"}, {"value": "white", "label": "White"}, {"value": "blue", "label": "Blue"}]}
+      ]
+    },
+    {
+      "id": "warehouse-bin",
+      "name": "Warehouse location label",
+      "dimensions": [
+        {"key": "aisle", "label": "Aisle", "options": [{"value": "a", "label": "A"}, {"value": "b", "label": "B"}, {"value": "c", "label": "C"}]},
+        {"key": "bin", "label": "Bin", "options": [{"value": "01", "label": "01"}, {"value": "02", "label": "02"}, {"value": "03", "label": "03"}]},
+        {"key": "status", "label": "Status", "options": [{"value": "stock", "label": "In stock"}, {"value": "inspect", "label": "Inspect"}]}
+      ]
+    }
+  ]
+}
